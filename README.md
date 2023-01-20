@@ -128,7 +128,7 @@ lower_whisker = lower_quartile - 1.5iqr
 print(upper_whisker)
 print(lower_whisker)
 
-#We eliminate the outliers wşth using this codes.
+# We eliminate the outliers wşth using this codes.
 table["Birth Weight"].loc[table["Birth Weight"]>7720.240]=table["Birth Weight"].loc[table["Birth Weight"]>7720.240]=table["Birth Weight"].mean()
 table["WGDP"].loc[table["WGDP"]>18]=table["WGDP"].loc[table["WGDP"]>18]=table["WGDP"].mean()
 
